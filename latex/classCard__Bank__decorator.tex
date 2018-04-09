@@ -1,0 +1,81 @@
+\hypertarget{classCard__Bank__decorator}{}\section{Класс Card\+\_\+\+Bank\+\_\+decorator}
+\label{classCard__Bank__decorator}\index{Card\+\_\+\+Bank\+\_\+decorator@{Card\+\_\+\+Bank\+\_\+decorator}}
+
+
+Граф наследования\+:Card\+\_\+\+Bank\+\_\+decorator\+:
+% FIG 0
+
+
+Граф связей класса Card\+\_\+\+Bank\+\_\+decorator\+:
+% FIG 1
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCard__Bank__decorator_ade840d4d4532b369d213d759b1c718b4}{Card\+\_\+\+Bank\+\_\+decorator} (\hyperlink{classBase__Card}{Base\+\_\+\+Card} $\ast$\+\_\+\+Current\+\_\+card, int \+\_\+\+Card\+\_\+\+Balance)
+\begin{DoxyCompactList}\small\item\em Обертка Бансковской карты \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCard__Bank__decorator_ab8a159467a15450ea787f7eab708be62}{Get\+\_\+info} ()
+\begin{DoxyCompactList}\small\item\em Базовый класс, от которого наследуются все декораторы \end{DoxyCompactList}\item 
+int \hyperlink{classCard__Bank__decorator_ac528dd2f55e84d170fddd195f135a749}{Get\+\_\+\+Card\+\_\+\+Balance} ()
+\item 
+void \hyperlink{classCard__Bank__decorator_acbf66f0e850aff561a9f1906902611f1}{Make\+\_\+\+Purchase} (int Price)
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\index{Card\+\_\+\+Bank\+\_\+decorator@{Card\+\_\+\+Bank\+\_\+decorator}!Card\+\_\+\+Bank\+\_\+decorator@{Card\+\_\+\+Bank\+\_\+decorator}}
+\index{Card\+\_\+\+Bank\+\_\+decorator@{Card\+\_\+\+Bank\+\_\+decorator}!Card\+\_\+\+Bank\+\_\+decorator@{Card\+\_\+\+Bank\+\_\+decorator}}
+\subsubsection[{\texorpdfstring{Card\+\_\+\+Bank\+\_\+decorator(\+Base\+\_\+\+Card $\ast$\+\_\+\+Current\+\_\+card, int \+\_\+\+Card\+\_\+\+Balance)}{Card_Bank_decorator(Base_Card *_Current_card, int _Card_Balance)}}]{\setlength{\rightskip}{0pt plus 5cm}Card\+\_\+\+Bank\+\_\+decorator\+::\+Card\+\_\+\+Bank\+\_\+decorator (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+\_\+\+Card} $\ast$}]{\+\_\+\+Current\+\_\+card, }
+\item[{int}]{\+\_\+\+Card\+\_\+\+Balance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCard__Bank__decorator_ade840d4d4532b369d213d759b1c718b4}{}\label{classCard__Bank__decorator_ade840d4d4532b369d213d759b1c718b4}
+
+
+Обертка Бансковской карты 
+
+С помощью этого класса пользователь сможет совершать покупки, денежные переводы и тд
+
+Достаточно воспользоваться специальным терминалом 
+
+\subsection{Методы}
+\index{Card\+\_\+\+Bank\+\_\+decorator@{Card\+\_\+\+Bank\+\_\+decorator}!Get\+\_\+\+Card\+\_\+\+Balance@{Get\+\_\+\+Card\+\_\+\+Balance}}
+\index{Get\+\_\+\+Card\+\_\+\+Balance@{Get\+\_\+\+Card\+\_\+\+Balance}!Card\+\_\+\+Bank\+\_\+decorator@{Card\+\_\+\+Bank\+\_\+decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Card\+\_\+\+Balance()}{Get_Card_Balance()}}]{\setlength{\rightskip}{0pt plus 5cm}int Card\+\_\+\+Bank\+\_\+decorator\+::\+Get\+\_\+\+Card\+\_\+\+Balance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCard__Bank__decorator_ac528dd2f55e84d170fddd195f135a749}{}\label{classCard__Bank__decorator_ac528dd2f55e84d170fddd195f135a749}
+Проверяет средства на карте \begin{DoxyReturn}{Возвращает}
+Баланс счета
+\end{DoxyReturn}
+\index{Card\+\_\+\+Bank\+\_\+decorator@{Card\+\_\+\+Bank\+\_\+decorator}!Get\+\_\+info@{Get\+\_\+info}}
+\index{Get\+\_\+info@{Get\+\_\+info}!Card\+\_\+\+Bank\+\_\+decorator@{Card\+\_\+\+Bank\+\_\+decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+info()}{Get_info()}}]{\setlength{\rightskip}{0pt plus 5cm}void Card\+\_\+\+Bank\+\_\+decorator\+::\+Get\+\_\+info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classCard__Bank__decorator_ab8a159467a15450ea787f7eab708be62}{}\label{classCard__Bank__decorator_ab8a159467a15450ea787f7eab708be62}
+
+
+Базовый класс, от которого наследуются все декораторы 
+
+Выводит информацию о карте и бансковской обертке \begin{DoxyReturn}{Возвращает}
+Структурированную информацию в консоль
+\end{DoxyReturn}
+
+
+Замещает \hyperlink{classBase__Card_a6fecba4a310841af77775165b4fc064c}{Base\+\_\+\+Card}.
+
+\index{Card\+\_\+\+Bank\+\_\+decorator@{Card\+\_\+\+Bank\+\_\+decorator}!Make\+\_\+\+Purchase@{Make\+\_\+\+Purchase}}
+\index{Make\+\_\+\+Purchase@{Make\+\_\+\+Purchase}!Card\+\_\+\+Bank\+\_\+decorator@{Card\+\_\+\+Bank\+\_\+decorator}}
+\subsubsection[{\texorpdfstring{Make\+\_\+\+Purchase(int Price)}{Make_Purchase(int Price)}}]{\setlength{\rightskip}{0pt plus 5cm}void Card\+\_\+\+Bank\+\_\+decorator\+::\+Make\+\_\+\+Purchase (
+\begin{DoxyParamCaption}
+\item[{int}]{Price}
+\end{DoxyParamCaption}
+)}\hypertarget{classCard__Bank__decorator_acbf66f0e850aff561a9f1906902611f1}{}\label{classCard__Bank__decorator_acbf66f0e850aff561a9f1906902611f1}
+функции покупки чего-\/либо
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Decorators.\+h\end{DoxyCompactItemize}

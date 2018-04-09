@@ -1,0 +1,17 @@
+\hypertarget{classBase__Card}{}\section{Класс Base\+\_\+\+Card}
+\label{classBase__Card}\index{Base\+\_\+\+Card@{Base\+\_\+\+Card}}
+
+
+Граф наследования\+:Base\+\_\+\+Card\+:
+% FIG 0
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classBase__Card_a6fecba4a310841af77775165b4fc064c}{Get\+\_\+info} ()=0\hypertarget{classBase__Card_a6fecba4a310841af77775165b4fc064c}{}\label{classBase__Card_a6fecba4a310841af77775165b4fc064c}
+
+\begin{DoxyCompactList}\small\item\em Базовый класс, от которого наследуются все декораторы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Base\+\_\+\+Card.\+h\end{DoxyCompactItemize}
