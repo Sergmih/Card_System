@@ -7,7 +7,10 @@
 #include "Readers.h"
 #include "Decorators.h"
 #include "CCard.h"
-
+/**
+* \brief Тестирование
+* \details Запуск различных тестов, провекра корректности работы программы
+*/
 TEST(CCard, test1){
   CCard c(007, Date(2020, 04, 20), Human("Ivan", "Ivanov", Date(1999, 04, 20)));
   EXPECT_EQ(c.Get_card_number(), 7);

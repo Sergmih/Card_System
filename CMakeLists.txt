@@ -22,3 +22,16 @@ else()
     set(SRC_LIST main.cpp Base_Card_Reader.h Readers.h Decorators.h Base_Card.h CCard.h)
     add_executable(Card_System ${SRC_LIST})
 endif()
+find_package(Doxygen)
+if (DOXYGEN_FOUND)
+
+    
+    message("Doxygen build started")
+    add_custom_target( doc_doxygen ALL
+            COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT}
+            WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+            COMMENT "Generating API documentation with Doxygen"
+            VERBATIM )
+else (DOXYGEN_FOUND)
+    message("Doxygen need to be installed to generate the doxygen documentation")
+endif (DOXYGEN_FOUND)

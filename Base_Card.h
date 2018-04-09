@@ -6,6 +6,9 @@
 
 struct Date
 {
+  /**
+  * \brief Структура для хранения дат
+  */
 	Date(unsigned short int _year, unsigned short int _month, unsigned short int _day) : year(_year), month(_month), day(_day){}
 	Date() = default;
 	unsigned short int year;
@@ -15,6 +18,9 @@ struct Date
 
 struct Human
 {
+  /**
+  * \brief Структура для хранения информации о человеке
+  */
 	Human(std::string _Name, std::string _Second_Name, Date _Birth) : Name(_Name), Second_Name(_Second_Name), Birth(_Birth){}
 	std::string Name;
 	std::string Second_Name;
@@ -23,6 +29,9 @@ struct Human
 
 class Base_Card
 {
+  /**
+  * \brief Базовый класс, от которого наследуются все декораторы
+  */
 public:
 	virtual void Get_info() = 0;
 	virtual ~Base_Card() = default;

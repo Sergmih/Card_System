@@ -8,6 +8,9 @@
 
 class Card_Pasport_Reader : public Base_Card_Reader
 {
+  /**
+  * \brief Для работы с терминалами по идентификации
+  */
 public:
 	Card_Pasport_Reader(Card_Pasport_decorator* _Current_card) :
 		Current_card(_Current_card) {}
@@ -15,7 +18,7 @@ public:
 
 	virtual void Read();
 
-	//functions connected with person identification
+
 
 private:
 	Card_Pasport_decorator* Current_card;
@@ -23,6 +26,9 @@ private:
 };
 void Card_Pasport_Reader::Read()
 {
+  /**
+  * \brief выводит в терминал информацию
+  */
 	Current_card->Get_info();
 }
 
@@ -31,6 +37,9 @@ void Card_Pasport_Reader::Read()
 
 class Card_Bank_Reader : public Base_Card_Reader
 {
+  /**
+  * \brief Для работы с терминалами в магазинах или банкоматах
+  */
 public:
 	Card_Bank_Reader(Card_Bank_decorator* _Current_card) :
 		Current_card(_Current_card)
@@ -41,7 +50,6 @@ public:
 	void Buy(int Price);
 
 
-	//
 
 private:
 	Card_Bank_decorator* Current_card;
@@ -49,11 +57,17 @@ private:
 };
 void Card_Bank_Reader::Read()
 {
+  /**
+  * \brief выводит в терминал информацию
+  */
 	Current_card->Get_info();
 }
 void Card_Bank_Reader::Buy(int Price)
 {
-	//Pricladivanie karti k terminalu v magazine
+  /**
+  * \brief Совершение покупки
+  * \details Проверяет достаточно ли средств на карте, если так то совершает покупку, списывае средства
+  */
 	if(Current_card->Get_Card_Balance() >= Price)
 	{
 		Current_card->Make_Purchase(Price);
@@ -67,6 +81,9 @@ void Card_Bank_Reader::Buy(int Price)
 
 class Card_Medpolis_Reader : public Base_Card_Reader
 {
+  /**
+  * \brief Для работы с терминалами в медицинских учереждениях
+  */
 public:
 	Card_Medpolis_Reader(Card_Medpolis_decorator* _Current_card) :
 		Current_card(_Current_card)
@@ -84,12 +101,18 @@ private:
 bool Card_Medpolis_Reader::Check_For_Validity()
 {
 	unsigned int number = Current_card->Get_Medpolis_number();
-	//if(base[number]) Esli v baze est' etot polis, to mozno lechit'
+	//if(base[number])
+  /**
+  * \brief проверка, есть ли такой клиент в базе
+  */
 		return true;
 
 }
 void Card_Medpolis_Reader::Read()
 {
+  /**
+  * \brief выводит в терминал информацию
+  */
 	Current_card->Get_info();
 }
 #endif

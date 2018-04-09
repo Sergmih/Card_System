@@ -7,6 +7,9 @@
 
 class CCard:public Base_Card
 {
+  /**
+  * \brief Основная информация о карте и ее владельце
+  */
 public:
 	CCard(unsigned int _card_number, Date _card_validate, Human _owner) :
 		card_number(_card_number), card_validate(_card_validate), card_owner(_owner){}
@@ -37,6 +40,9 @@ Human CCard::Get_card_owner() const
 }
 void CCard::Get_info()
 {
+  /**
+  * \brief выводит информацию о карте
+  */
 	std::cout << "Card number: " << Get_card_number() << std::endl;
 	std::cout << "Card holder name: " << Get_card_owner().Second_Name << " " << Get_card_owner().Name << std::endl;
 	std::cout << "Card holder birthday: " << Get_card_owner().Birth.year << "." << Get_card_owner().Birth.month << "." << Get_card_owner().Birth.day << std::endl;
