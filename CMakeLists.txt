@@ -24,8 +24,6 @@ else()
 endif()
 find_package(Doxygen)
 if (DOXYGEN_FOUND)
-
-    
     message("Doxygen build started")
     add_custom_target( doc_doxygen ALL
             COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT}
